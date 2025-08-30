@@ -1,0 +1,3 @@
+SELECT title, 
+POSITION('Bright' IN title) AS bright_position
+FROM film;

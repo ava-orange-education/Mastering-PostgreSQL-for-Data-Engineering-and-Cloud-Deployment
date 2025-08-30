@@ -1,0 +1,5 @@
+sudo ufw enable
+
+sudo ufw allow from 192.168.222.196 to any port 5432
+
+sudo ufw status

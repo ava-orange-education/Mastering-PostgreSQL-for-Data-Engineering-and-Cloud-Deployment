@@ -1,0 +1,6 @@
+CREATE FUNCTION get_total_payment() 
+RETURNS DECIMAL AS $$
+BEGIN
+    RETURN (SELECT SUM(amount) FROM payment);
+END;
+$$ LANGUAGE plpgsql; 

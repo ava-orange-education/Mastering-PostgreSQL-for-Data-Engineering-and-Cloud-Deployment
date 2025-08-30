@@ -1,0 +1,9 @@
+INSERT INTO customers (customer_id, first_name, last_name, store_id, email)
+VALUES (76, ‘Guaresh’, ‘Badal’, ‘B09’, ‘g.badal@gmail.com’), 
+(90, ‘Aarav’, ‘Chadha’, ‘B10’, ‘a.chadha@gmail.com’ ),
+(109, ‘Pooran’, ‘Cheema’, ‘B14’,  ‘p.cheema@gmail.com’),
+(65, ‘Sanaya’,‘Choudhry’, ‘B20’,  ‘s.choudhry@gmail.com),
+(23, ‘Sagar’, ‘Ghandhi’, ‘B29’, ‘s.ghandhi@gmail.com’),
+(109, ‘Pooran’, ‘Cheema’, ‘B14’, ‘p.cheema@gmail.com’),
+(90, ‘Aarav’, ‘Chadha’, ‘B10’,  ‘a.chadha@gmail.com’ ),
+(9, ‘Aryan’, ‘Suresh’, ‘B14’, ‘a.suresh@gmail.com);

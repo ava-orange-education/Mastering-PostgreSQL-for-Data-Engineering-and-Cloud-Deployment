@@ -1,0 +1,25 @@
+Subquery Example:
+
+SELECT f.title, rental_counts.rental_count
+FROM film f
+JOIN (
+    SELECT film_id, COUNT(*) AS rental_count
+    FROM inventory i
+    JOIN rental r ON i.inventory_id = r.inventory_id
+    GROUP BY film_id
+) rental_counts ON f.film_id = rental_counts.film_id;
+
+
+
+CTE Example:
+
+WITH rental_counts AS (
+    SELECT film_id, COUNT(*) AS rental_count
+    FROM inventory i
+    JOIN rental r ON i.inventory_id = r.inventory_id
+    GROUP BY film_id
+)
+SELECT f.title, rc.rental_count
+FROM film f
+JOIN rental_counts rc ON f.film_id = rc.film_id;
+

@@ -1,0 +1,4 @@
+INSERT INTO dbschema.employees (emp_id, first_name, last_name, department_name)
+VALUES(67, 'Aisha','Bassi','Finance'), 
+(106,'Fatima','Chandra', 'IT'), 
+(28, 'Laila', 'Kapoor', 'Sales');

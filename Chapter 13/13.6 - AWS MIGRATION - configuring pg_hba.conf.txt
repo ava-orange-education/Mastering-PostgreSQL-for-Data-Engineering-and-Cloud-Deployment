@@ -1,0 +1,6 @@
+Vi /etc/postgresql/16/main/pg_hba.conf
+
+host    all             all             172.31.35.105/32        md5    #Your EC2 ip address
+host    all             all             172.31.0.0/16           md5    #VPC range like AWS EC2
+host    all             all             173.35.12.152/24        md5    #local machine ip
+host    dvdrental       dms_user        172.31.40.44/32         md5    #DMS user and replication instance ip.

@@ -1,0 +1,9 @@
+CREATE TABLE customers (
+	Customer_id int primary key,
+	first_name VARCHAR (30),
+	last_name  VARCHAR (30) NOT NULL,
+         store_id  CHAR (3),
+         email VARCHAR (55) 
+);
+
+

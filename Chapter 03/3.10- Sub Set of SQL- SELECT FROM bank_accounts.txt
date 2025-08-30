@@ -1,0 +1,6 @@
+SELECT 
+    id,
+    account_name,
+    account_balance
+FROM 
+    bank_accounts;

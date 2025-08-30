@@ -1,0 +1,5 @@
+SELECT privilege_type
+FROM information_schema.role_table_grants
+WHERE table_schema = quote_ident('public')
+AND table_name = quote_ident('car_owner')
+AND grantee = quote_ident('aisha');

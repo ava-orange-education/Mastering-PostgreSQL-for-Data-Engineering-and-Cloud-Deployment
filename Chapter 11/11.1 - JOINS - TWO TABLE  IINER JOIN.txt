@@ -1,0 +1,3 @@
+SELECT r.rental_id, c.first_name, c.last_name
+FROM rental r
+INNER JOIN customer c ON r.customer_id = c.customer_id;

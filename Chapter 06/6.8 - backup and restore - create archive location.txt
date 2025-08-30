@@ -1,0 +1,5 @@
+sudo su – postgres
+
+mkdir -pv /pgbackup/archivedir
+
+cd /pgbackup/

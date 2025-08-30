@@ -1,0 +1,12 @@
+-- Update a row in the rental table
+
+UPDATE rental
+SET return_date = '2024-12-24 10:00:00'
+WHERE rental_id = 2;
+
+
+-- Verify the last_update column
+
+SELECT *
+FROM rental
+WHERE rental_id = 2;

@@ -1,0 +1,4 @@
+SELECT c.name AS category_name, f.title AS film_title
+FROM category c
+FULL JOIN film_category fc ON c.category_id = fc.category_id
+FULL JOIN film f ON fc.film_id = f.film_id;

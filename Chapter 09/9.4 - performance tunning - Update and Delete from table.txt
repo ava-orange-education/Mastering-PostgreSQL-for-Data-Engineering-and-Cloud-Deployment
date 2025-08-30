@@ -1,0 +1,11 @@
+UPDATE providers SET data = data || ' updated'
+WHERE id % 2 = 0;
+
+
+DELETE FROM providers WHERE id % 10 = 0;
+
+
+UPDATE providers SET data = data || ' updated'   WHERE id % 2 = 0;
+UPDATE providers SET data = data || ' updated' WHERE id % 4 = 0;
+UPDATE providers SET data = data || ' updated' WHERE id % 3 = 0;
+

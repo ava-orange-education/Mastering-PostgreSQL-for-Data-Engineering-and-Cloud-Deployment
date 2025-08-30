@@ -1,0 +1,10 @@
+create database dvdrental;
+
+grant connect on database dvdrental to postgres; 
+
+grant usage on schema public to postgres;
+
+create table actor (actor_id int, first_name varchar(30), last_name varchar(30));
+
+insert into actor values (34,'lemy','zao'),(67,'divine','zao'),
+                                                  (90,'nash','zao'),(100,'jack','zao');

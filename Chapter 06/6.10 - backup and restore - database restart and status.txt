@@ -1,0 +1,4 @@
+/usr/lib/postgresql/16/bin/pg_ctl -D /etc/postgresql/16/main/ restart
+/usr/lib/postgresql/16/bin/pg_ctl -D /etc/postgresql/16/main/ status
+/usr/lib/postgresql/16/bin/pg_ctl -D /etc/postgresql/16/main/ stop
+/usr/lib/postgresql/16/bin/pg_ctl -D /etc/postgresql/16/main/ reload

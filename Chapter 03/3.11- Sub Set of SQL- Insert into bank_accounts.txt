@@ -1,0 +1,16 @@
+BEGIN;
+INSERT INTO bank_accounts(account_name,account_balance)
+VALUES ('Laila',10000);
+COMMIT;
+
+
+BEGIN;
+INSERT INTO bank_accounts(account_name,account_balance)
+VALUES ('Pramoda',10000);
+ROLLBACK;
+
+
+BEGIN;
+INSERT INTO bank_accounts(account_name,account_balance)
+VALUES ('Akram',10000);
+COMMIT;

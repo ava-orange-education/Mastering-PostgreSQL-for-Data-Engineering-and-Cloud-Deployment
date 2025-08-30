@@ -1,0 +1,9 @@
+SELECT datname, age(datfrozenxid) AS xid_age
+FROM pg_database;
+
+
+
+SELECT relname, age(relfrozenxid) AS xid_age
+FROM pg_class
+WHERE relkind = 'r'
+ORDER BY age(relfrozenxid) DESC;

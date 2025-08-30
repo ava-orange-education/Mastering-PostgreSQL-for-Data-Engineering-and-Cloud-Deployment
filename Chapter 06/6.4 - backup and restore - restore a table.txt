@@ -1,0 +1,1 @@
+psql -U postgres -d dvdrental -t actor  <  /var/lib/postgresql/backup/actor.sql

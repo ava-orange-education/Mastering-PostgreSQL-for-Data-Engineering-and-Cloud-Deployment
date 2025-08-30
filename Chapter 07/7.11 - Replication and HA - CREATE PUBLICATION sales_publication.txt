@@ -1,0 +1,3 @@
+CREATE PUBLICATION sales_publication;
+
+ALTER PUBLICATION sales_publication ADD TABLE sales;

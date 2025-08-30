@@ -1,0 +1,16 @@
+CREATE TABLE clients(
+	customer_id int Primary key,
+	first_name VARCHAR(25),
+	last_name VARCHAR(25) not null,
+	email VARCHAR(55) UNIQUE
+);
+
+
+
+CREATE TABLE sales (
+	sales_id int Primary key,
+	date_of_purchase Date,
+          Email VARCHAR(55) UNIQUE,
+          customer_id int,
+	CONSTRAINT FK_clients_sales FOREIGN KEY(customer_id)REFERENCES clients(customer_id)
+);

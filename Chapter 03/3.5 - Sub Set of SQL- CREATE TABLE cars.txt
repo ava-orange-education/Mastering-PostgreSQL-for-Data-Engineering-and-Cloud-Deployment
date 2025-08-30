@@ -1,0 +1,8 @@
+CREATE TABLE cars (
+car_id int primary key, 
+make varchar(30), 
+model varchar(30), 
+age int,
+owner_id int,
+);
+

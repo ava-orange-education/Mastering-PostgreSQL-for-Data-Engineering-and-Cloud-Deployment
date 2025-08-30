@@ -1,0 +1,3 @@
+psql -h your-rds-endpoint -U your-master-username -d your-database-name
+
+psql -h my-database-instance.c98s0yq4y9v1.us-east-2.rds.amazonaws.com  -d postgres -p 5432 -U postgres

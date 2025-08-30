@@ -1,0 +1,34 @@
+ALTER TABLE students
+ADD COLUMN marks integer;
+
+ALTER TABLE students
+DROP COLUMN marks;
+
+ALTER TABLE students
+RENAME COLUMN sur_name TO first_name;
+
+
+ALTER TABLE students
+RENAME COLUMN surname TO last_name;
+
+
+ALTER TABLE students
+ADD COLUMN grades CHAR(1);
+
+
+ALTER TABLE students
+ADD CHECK (grades IN ('A',  'B',  'C',  'D',  'E',  'U'));
+
+
+INSERT INTO students (student_id, first_name, last_name, email, grades)
+VALUES (017, ‘Tarjani’, ‘Gururani’, ‘n.vishnu@gmail.com’, ‘F’);
+
+
+INSERT INTO students (student_id, first_name, last_name, email, grades)
+VALUES ( 018, ‘Naveena’, ‘Vishnu’, ‘n.vishnu@gmail.com’, ‘C’),
+                ( 012, ‘Sahana’, ‘Arun’, ‘s.arun@gmail.com’,‘D’);
+
+ALTER TABLE students
+ADD CONSTRAINT unique_email UNIQUE (email);
+
+

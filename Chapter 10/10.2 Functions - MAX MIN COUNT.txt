@@ -1,0 +1,11 @@
+SELECT MAX(amount) AS highest_payment
+FROM payment;
+
+
+SELECT MIN(amount) AS smallest_payment
+FROM payment;
+
+
+SELECT COUNT(*) AS total_payments
+FROM payment;
+

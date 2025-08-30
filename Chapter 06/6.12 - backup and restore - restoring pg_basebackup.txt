@@ -1,0 +1,9 @@
+cd
+cd /pgdata/restorebasebkp
+
+The command to restore the files is:
+
+tar xvf  /pgbackup/basebackup/base.tar
+tar xvf  /pgbackup/basebackup/pg_wal.tar
+tar xvf  /pgbackup/basebackup/19540.tar
+tar xvf  /pgbackup/basebackup/19541.tar

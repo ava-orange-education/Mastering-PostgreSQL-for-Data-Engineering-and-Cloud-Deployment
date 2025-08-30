@@ -1,0 +1,6 @@
+SELECT title, LOWER(title) AS title_lowercase
+FROM film;
+
+
+SELECT title, UPPER(title) AS title_uppercase
+FROM film;

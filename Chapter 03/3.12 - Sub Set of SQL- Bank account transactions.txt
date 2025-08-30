@@ -1,0 +1,13 @@
+
+
+BEGIN;      
+-- deduct 1000 from Laila's account
+UPDATE bank_accounts 
+SET account_balance = account_balance - 1000
+WHERE account_name = 'Akram';
+-- add 1000 to Akram's account
+UPDATE bank_accounts
+SET account_balance = account_balance + 1000
+WHERE account_name = 'Laila'; 
+-- commit the transaction to save it
+COMMIT;

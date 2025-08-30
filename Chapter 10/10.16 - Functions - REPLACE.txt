@@ -1,0 +1,2 @@
+SELECT name, REPLACE(name, 'English', 'Eng') AS updated_name
+FROM language;

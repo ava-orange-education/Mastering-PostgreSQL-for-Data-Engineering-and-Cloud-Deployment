@@ -1,0 +1,17 @@
+CREATE TABLE parent (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(50)
+);
+
+
+CREATE TABLE child (
+    id SERIAL PRIMARY KEY,
+    parent_id INTEGER REFERENCES parent(id) ON DELETE CASCADE ON UPDATE CASCADE,
+    value VARCHAR(50)
+);
+
+
+-- Insert into parent and child
+INSERT INTO parent (name) VALUES ('Parent1');
+
+INSERT INTO child (parent_id, value) VALUES (1, 'Child1');

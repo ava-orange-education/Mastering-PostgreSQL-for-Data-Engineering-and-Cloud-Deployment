@@ -1,0 +1,10 @@
+
+CREATE TABLE providers (
+    id SERIAL PRIMARY KEY,
+    data TEXT
+);
+
+
+
+INSERT INTO providers (data)
+SELECT 'Row ' || generate_series(1, 1000000);

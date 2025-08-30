@@ -1,0 +1,14 @@
+SELECT first_name, last_name
+FROM customer c
+WHERE (
+    SELECT COUNT(*)
+    FROM rental r
+    WHERE r.customer_id = c.customer_id
+) > (
+    SELECT AVG(rental_count)
+    FROM (
+        SELECT COUNT(*) AS rental_count
+        FROM rental
+        GROUP BY customer_id
+    ) sub
+);

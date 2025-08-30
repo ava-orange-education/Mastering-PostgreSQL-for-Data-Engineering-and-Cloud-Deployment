@@ -1,0 +1,7 @@
+/usr/lib/postgresql/16/bin/pg_upgrade \
+--old-datadir=/var/lib/postgresql/13/main \
+--new-datadir=/var/lib/postgresql/16/main \
+--old-bindir=/usr/lib/postgresql/13/bin \
+--new-bindir=/usr/lib/postgresql/16/bin \
+--old-options '-c config_file=/etc/postgresql/13/main/postgresql.conf' \
+--new-options '-c config_file=/etc/postgresql/16/main/postgresql.conf' \

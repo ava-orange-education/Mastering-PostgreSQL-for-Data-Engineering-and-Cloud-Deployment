@@ -1,0 +1,11 @@
+CREATE FUNCTION get_customer_payment(customer_id INT) 
+RETURNS DECIMAL AS $$
+DECLARE
+    total_payment DECIMAL;
+BEGIN
+    SELECT SUM(amount) INTO total_payment
+    FROM payment
+    WHERE payment.customer_id = get_customer_payment.customer_id;
+    RETURN total_payment;
+END;
+$$ LANGUAGE plpgsql;

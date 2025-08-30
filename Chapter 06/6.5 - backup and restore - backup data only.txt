@@ -1,0 +1,3 @@
+pg_dump -d dvdrental -t actor -a  >  /var/lib/postgresql/backup/data_only.sql
+
+pg_dump -d dvdrental -t actor --data  >  /var/lib/postgresql/backup/data_only.sql

@@ -1,0 +1,6 @@
+CREATE TABLE dbschema.employees (
+   emp_id INT PRIMARY KEY, 
+   first_name VARCHAR(30), 
+   last_name VARCHAR(30) NOT NULL,
+   department_name VARCHAR(20),
+   );

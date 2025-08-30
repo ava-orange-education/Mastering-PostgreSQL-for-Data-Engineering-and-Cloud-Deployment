@@ -1,0 +1,2 @@
+SELECT title, SUBSTRING(title FROM 1 FOR 3) AS short_title
+FROM film;

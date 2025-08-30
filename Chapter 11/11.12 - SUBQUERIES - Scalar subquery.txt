@@ -1,0 +1,4 @@
+SELECT rental_id, rental_date,
+    (SELECT AVG(return_date - rental_date)
+      FROM rental) AS avg_rental_duration
+FROM rental;

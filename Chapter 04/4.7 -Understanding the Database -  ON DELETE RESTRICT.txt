@@ -1,0 +1,20 @@
+CREATE TABLE authors (
+    author_id SERIAL PRIMARY KEY,
+    name VARCHAR(100)
+);
+
+
+CREATE TABLE books (
+    book_id SERIAL PRIMARY KEY,
+    title VARCHAR(100),
+    author_id INTEGER REFERENCES authors(author_id) ON DELETE RESTRICT ON UPDATE RESTRICT
+);
+
+-- Insert into authors
+INSERT INTO authors (name) VALUES ('Author1');
+-- Insert into books
+INSERT INTO books (title, author_id) VALUES ('Book1', 1);
+
+
+-- Attempt to delete author row
+DELETE FROM authors WHERE author_id = 1;

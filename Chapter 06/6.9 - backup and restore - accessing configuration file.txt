@@ -1,0 +1,7 @@
+Vi /etc/postgresql/16/main/postgresql.conf
+
+Or:
+
+cd  /etc/postgresql/16/main/
+
+vi  postgresql.conf

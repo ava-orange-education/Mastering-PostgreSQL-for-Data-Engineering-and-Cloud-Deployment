@@ -1,0 +1,7 @@
+
+
+pg_dump -Ft  -d dvdrental -U postgres > /var/lib/postgresql/backup/ dvdrental.tar
+
+pg_dump -Fc  -d dvdrental -U postgres > /var/lib/postgresql/backup/dvdrental.dump
+
+pg_dump -d dvdrental -U postgres > /var/lib/postgresql/backup/dvdrental.sql

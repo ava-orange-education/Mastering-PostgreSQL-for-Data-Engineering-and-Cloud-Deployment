@@ -1,0 +1,7 @@
+SELECT client_addr, state FROM pg_stat_replication;
+
+
+SELECT * FROM pg_stat_wal_receiver;
+
+
+select pg_is_in_recovery();

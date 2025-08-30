@@ -1,0 +1,11 @@
+ps -ef | grep postgres  # To get the path to the configuration file
+
+vi /etc/postgresql/16/main/postgresql.conf   
+
+Change the listen_addresses to *
+
+exit
+
+sudo systemctl restart postgresql 
+OR
+sudo systemctl start postgresql@16-main

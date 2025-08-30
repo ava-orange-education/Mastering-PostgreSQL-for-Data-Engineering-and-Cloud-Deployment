@@ -1,0 +1,3 @@
+UPDATE customer_details
+SET email = 'newemail@example.com'
+WHERE customer_id = 1;

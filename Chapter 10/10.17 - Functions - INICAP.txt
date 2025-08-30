@@ -1,0 +1,2 @@
+SELECT title, INITCAP(title) AS title_case
+FROM film;

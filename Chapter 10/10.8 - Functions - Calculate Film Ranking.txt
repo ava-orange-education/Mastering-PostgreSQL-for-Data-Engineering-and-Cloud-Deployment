@@ -1,0 +1,3 @@
+SELECT title, rental_rate,
+    RANK() OVER (ORDER BY rental_rate DESC) AS rank
+FROM film;

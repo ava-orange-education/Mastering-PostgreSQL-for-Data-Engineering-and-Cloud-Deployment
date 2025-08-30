@@ -1,0 +1,1 @@
+CREATE SUBSCRIPTION sales_subscription CONNECTION 'host=192.168.222.195 port=5432 password= aryan123£ user=aryan dbname=products' PUBLICATION sales_publication;

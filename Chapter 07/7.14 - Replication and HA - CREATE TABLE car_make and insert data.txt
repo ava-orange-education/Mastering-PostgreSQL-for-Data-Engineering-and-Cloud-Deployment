@@ -1,0 +1,12 @@
+CREATE TABLE car_make (
+ car_id int,
+ car_make varchar(30),
+ colour  varchar(15)
+);
+
+
+INSERT INTO car_make VALUES
+(65,'TOYOTA', 'BLACK'),
+(75,'VW', 'WHITE'),
+(75,'BMW', 'RED');
+

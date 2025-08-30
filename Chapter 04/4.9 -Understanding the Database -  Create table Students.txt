@@ -1,0 +1,8 @@
+CREATE TABLE students (
+   student_id serial PRIMARY KEY,
+   sur_name VARCHAR (25) NOT NULL,
+   surname VARCHAR (25) NOT NULL,
+   email VARCHAR (80)
+);
+
+

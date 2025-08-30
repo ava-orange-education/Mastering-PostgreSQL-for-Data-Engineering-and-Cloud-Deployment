@@ -1,0 +1,17 @@
+
+CREATE TYPE day_of_week AS ENUM ('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday');
+
+
+CREATE TABLE schedule (
+    id SERIAL PRIMARY KEY,
+    event_name VARCHAR(100),
+    event_day day_of_week
+);
+
+
+INSERT INTO schedule (event_name, event_day) VALUES ('Meeting', 'Monday');
+INSERT INTO schedule (event_name, event_day) VALUES ('Workshop', 'Wednesday');
+INSERT INTO schedule (event_name, event_day) VALUES ('Conference', 'Friday');
+
+
+SELECT * FROM schedule;

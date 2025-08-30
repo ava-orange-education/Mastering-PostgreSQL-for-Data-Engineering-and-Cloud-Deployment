@@ -1,0 +1,16 @@
+CREATE TABLE parent2 (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(50)
+);
+
+
+CREATE TABLE child2 (
+    id SERIAL PRIMARY KEY,
+    parent_id INTEGER REFERENCES parent2(id) ON DELETE SET NULL ON UPDATE SET NULL,
+    value VARCHAR(50)
+);
+
+
+-- Insert into parent and child
+INSERT INTO parent2 (name) VALUES ('Parent2');
+INSERT INTO child2 (parent_id, value) VALUES (1, 'Child2');

@@ -1,0 +1,8 @@
+CREATE TABLE car_owner (
+owner_id int primary key, 
+first_name varchar(35), 
+last_name varchar(35), 
+city varchar(35), 
+state char(2), 
+emails varchar(55) unique
+);

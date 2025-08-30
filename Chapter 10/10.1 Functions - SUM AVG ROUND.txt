@@ -1,0 +1,10 @@
+SELECT SUM(amount) AS total_payments
+FROM payment;
+
+
+SELECT AVG(amount) AS average_payment
+FROM payment;
+
+
+SELECT ROUND(AVG(amount), 2) AS average_payment
+FROM payment;

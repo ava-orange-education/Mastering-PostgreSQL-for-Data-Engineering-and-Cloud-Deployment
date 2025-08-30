@@ -1,0 +1,17 @@
+CREATE TABLE schools (
+    school_id SERIAL PRIMARY KEY,
+    school_name VARCHAR(100)  );
+
+
+CREATE TABLE students (
+    student_id SERIAL PRIMARY KEY,
+    student_name VARCHAR(100),
+    school_id INTEGER REFERENCES schools(school_id) ON DELETE NO ACTION ON UPDATE NO ACTION  );
+
+
+-- Insert into schools
+INSERT INTO schools (school_name) VALUES ('Buea High');
+-- Insert into students
+INSERT INTO students (student_name, school_id) VALUES ('Alice', 1);
+-- Attempt to delete school row
+ DELETE FROM schools WHERE school_id = 1; 

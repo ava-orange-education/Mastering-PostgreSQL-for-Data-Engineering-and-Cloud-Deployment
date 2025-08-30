@@ -1,0 +1,11 @@
+CREATE OR REPLACE FUNCTION get_rented_films(customer_id INT) 
+RETURNS TABLE (film_id INT, title VARCHAR) AS $$
+BEGIN
+    RETURN QUERY
+    SELECT f.film_id, f.title
+    FROM film f
+    JOIN inventory i ON f.film_id = i.film_id
+    JOIN rental r ON i.inventory_id = r.inventory_id
+    WHERE r.customer_id = get_rented_films.customer_id;
+END;
+$$ LANGUAGE plpgsql;

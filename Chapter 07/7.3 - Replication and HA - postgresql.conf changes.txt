@@ -1,0 +1,7 @@
+listen_addresses = '*'
+archive_mode = on
+max_wal_senders = 3 
+max_wal_size = 1GB    
+wal_level = replica
+hot_standby = on   
+archive_command = 'cp %p /var/lib/archivedir/%f' 

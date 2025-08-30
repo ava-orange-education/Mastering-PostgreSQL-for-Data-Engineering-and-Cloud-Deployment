@@ -1,0 +1,4 @@
+pg_dumpall > /path_to_backup_location/dumpfile
+
+
+pg_dumpall > /var/lib/postgresql/backup/cluster.sql

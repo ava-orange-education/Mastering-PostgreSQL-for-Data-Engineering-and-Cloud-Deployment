@@ -1,0 +1,11 @@
+sudo vi /etc/postgresql/14/main/postgresql.conf
+
+OR
+
+vi /etc/postgresql/14/main/postgresql.conf
+
+
+
+sudo vi /etc/postgresql/14/main/pg_hba.conf
+OR
+vi /etc/postgresql/14/main/pg_hba.conf

@@ -1,0 +1,11 @@
+CREATE DATABASE products;
+
+\c products;
+
+CREATE TABLE sales
+(
+    id SERIAL,
+    product_name varchar(50),
+    sales_price DECIMAL,
+    CONSTRAINT sales_pkey PRIMARY KEY (id)
+);

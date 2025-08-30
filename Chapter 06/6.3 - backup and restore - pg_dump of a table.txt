@@ -1,0 +1,2 @@
+
+pg_dump -d dvdrental -t actor > /var/lib/postgresql/backup/actor.sql

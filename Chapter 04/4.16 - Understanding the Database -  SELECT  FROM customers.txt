@@ -1,0 +1,14 @@
+SELECT * FROM customers
+WHERE customer_id > 80
+ORDER BY customer_id DESC;
+
+
+SELECT * FROM customers
+WHERE customer_id > 80
+AND store_id = ‘B14’ ;
+
+
+SELECT DISTINCT first_name, last_name, store_id, email
+FROM customers
+WHERE customer_id > 80
+AND store_id = ‘B14’ ;
